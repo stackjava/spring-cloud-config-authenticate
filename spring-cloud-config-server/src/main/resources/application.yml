@@ -1,0 +1,15 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/stackjava/spring-cloud-config-server-repo.git
+          search-paths: demo
+
+  security:
+    user:
+      name: admin1234
+      password: admin1234
